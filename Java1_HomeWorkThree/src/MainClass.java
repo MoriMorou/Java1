@@ -8,7 +8,7 @@ public class MainClass {
     private static final char USER_SIGN_TWO = 'O';
     private static final char AI_SIGN = 'O';
     private static final char NOT_SIGN = '_';
-    private static final int Size = 4;
+    private static final int Size = 6;
     private static char[][] field = new char[Size][Size];
 
     public static void main(String[] args) {                                                        // запуск программы
@@ -211,7 +211,7 @@ public class MainClass {
     }
 
 
-    private static boolean checkWin2(char Sign) {  // запасной вариант, кторый был озвучен на уроке
+    private static boolean checkWin2(char Sign) {  // запасной вариант, который был озвучен на уроке
         // проверка по строкам
         for (int i = 0; i < Size; i++) {
             if (field[i][0] == Sign && field[i][1] == Sign && field[i][2] == Sign) {
